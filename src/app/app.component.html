@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <tr>
+     <th>Id</th>
+     <th>Name</th>
+   </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let account of accounts">
+      <td>{{ account.id }} </td>
+      <td>{{ account.getDescription }} </td>
+    </tr>
+  </tbody>
+</table>
