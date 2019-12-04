@@ -1,14 +1,25 @@
-<table>
+<!-- <app-account-list [accounts]="accounts"></app-account-list> -->
+
+<a routerLink="accounts/list">List</a>
+<a routerLink="accounts/edit">Edit</a>
+
+<router-outlet></router-outlet>
+
+<!-- <table>
   <thead>
     <tr>
      <th>Id</th>
      <th>Name</th>
+     <th>Email</th>
+     <th>Is Employee</th>
    </tr>
   </thead>
   <tbody>
     <tr *ngFor="let account of accounts">
       <td>{{ account.id }} </td>
-      <td>{{ account.getDescription }} </td>
+      <td>{{ account.name }} </td>
+      <td>{{ account.email }} </td>
+      <td>{{ account.isEmployee ? 'Yes' : 'No'}} </td>
     </tr>
   </tbody>
-</table>
+</table> -->
